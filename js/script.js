@@ -2,10 +2,12 @@
 let outputWord = document.querySelector('.output_word');
 let outputReverse = document.querySelector('.output_word_reverse');
 
+let outputNumberResult = document.querySelector('.output_number');
+
 
 // prendo i due bottoni pari e dispari
-const pari = document.querySelector('.gioco');
-const dispari = document.querySelector('.gioco2');
+const pari = document.querySelector('.pari');
+const dispari = document.querySelector('.dispari');
 
 document.querySelector('.pari-dispari').addEventListener('click', function(){
     // mostro al click la scelta tra pari e dispari
@@ -14,17 +16,33 @@ document.querySelector('.pari-dispari').addEventListener('click', function(){
 }); 
 
 
-// aprire un prompt al click del bottone
-function  number(){
+// aprire un prompt al click del bottone per il pari
+function  numberPari(){
     const numberGame = parseInt(prompt('Inserisci un numero per giocare'));
     let randomNumberPc = Math.floor(Math.random() * 5 );
     
     let somma = randomNumberPc + numberGame;
 
     if(somma % 2 == 0){
-        console.log('vinto');
+        outputNumberResult.innerHTML = 'HAI VINTO';
     }else{
-        console.log('perso');
+        outputNumberResult.innerHTML = 'HAI PERSO';
+    }
+    console.log(randomNumberPc);
+    
+    console.log(numberGame);
+}
+
+function  numberDispari(){
+    const numberGame = parseInt(prompt('Inserisci un numero per giocare'));
+    let randomNumberPc = Math.floor(Math.random() * 5 );
+    
+    let somma = randomNumberPc + numberGame;
+
+    if(somma % 2 == 0){
+        outputNumberResult.innerHTML = 'HAI PERSO';
+    }else{
+        outputNumberResult.innerHTML = 'HAI VINTO';
     }
     console.log(randomNumberPc);
     
