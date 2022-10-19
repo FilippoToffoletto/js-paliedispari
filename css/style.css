@@ -1,5 +1,46 @@
+
+/* **Palidroma**
+Chiedere all’utente di inserire una parola
+Creare una funzione per capire se la parola inserita è palindroma
+**Pari e Dispari**
+L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+Sommiamo i due numeri
+Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+Dichiariamo chi ha vinto.
+**Consigli del giorno**
+1. Scriviamo sempre in italiano i passaggi che vogliamo fare
+2. Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti. */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #6da4eb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    background-color: #b2a9ed;
+    width: 60%;
+    height: 60vh;
+    margin: 90px auto;
+    border-radius: 20px;
+    padding: 30px 10px;
+}
+
+.palindroma, .pari_dispari{
+    background-color: #f1e3f3;
+    height: 30%;
+    width: 60%;
+    margin: 30px auto;
+    border-radius: 20px;
+    padding: 10px 0px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+
