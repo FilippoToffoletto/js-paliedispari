@@ -14,20 +14,23 @@ document.querySelector('.pari-dispari').addEventListener('click', function(){
 }); 
 
 
-
-
 // aprire un prompt al click del bottone
 function  number(){
     const numberGame = parseInt(prompt('Inserisci un numero per giocare'));
-    let randomNumberPc = Math.floor(Math.random() * 5);
-    if(numberGame % 2 == 0){
-        console.log('pari');
-    }else{
-        console.log('dispari');
-    }
+    let randomNumberPc = Math.floor(Math.random() * 5 );
+    
+    let somma = randomNumberPc + numberGame;
 
+    if(somma % 2 == 0){
+        console.log('vinto');
+    }else{
+        console.log('perso');
+    }
+    console.log(randomNumberPc);
+    
     console.log(numberGame);
 }
+
 
 
 // aprire un prompt al click del bottone
