@@ -1,6 +1,3 @@
-
-
-
 // creo un innerhtml con il prompt della parola
 let outputWord = document.querySelector('.output_word');
 let outputReverse = document.querySelector('.output_word_reverse');
@@ -22,17 +19,9 @@ function word(){
         outputReverse.innerHTML = 'La parola è palindroma';
     }else{
         outputReverse.innerHTML = 'La parola non è palindroma';
-
     }
 
 }
-
-// const parolaInversa = wordInsert.reverse();
-// if(parolaInversa === wordInsert){
-//     console.log('pari');
-// }else{
-//     console.log('dispari');
-// }
 
 
 
@@ -41,7 +30,12 @@ function word(){
 function  number(){
     const numberGame = parseInt(prompt('Inserisci un numero per giocare'));
 
-    
+    if(numberGame % 2 == 0){
+        console.log('pari');
+    }else{
+        console.log('dispari');
+    }
+
     console.log(numberGame);
 }
 
